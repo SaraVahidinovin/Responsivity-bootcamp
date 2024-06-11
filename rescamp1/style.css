@@ -25,9 +25,22 @@ body{
 .nav-section{
     background-color: #B2008A;
 }
+.aside{
+    background-color: #FD96A9;
+}
 
 .footer{
     grid-column: 1/-1;
     height: 5rem;
     background-color: #C1C99A;
+}
+
+@media screen  and (max-width:700px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 6fr 1fr 1fr 1fr;
+    }
+  .aside {
+        margin: 0.2rem;
+    }
 }

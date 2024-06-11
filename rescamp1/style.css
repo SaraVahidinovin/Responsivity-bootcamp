@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+.container{
+    margin: 0.5rem;
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    gap: 0.5rem;
+    height: 100vh;
+}
+
+.header{
+    grid-column: 1/-1;
+    height: 5rem;
+    background-color: #480063;
+}
+
+.nav{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.5rem;
+}
+
+.nav-section{
+    background-color: #B2008A;
+}
+
+.footer{
+    grid-column: 1/-1;
+    height: 5rem;
+    background-color: #C1C99A;
+}

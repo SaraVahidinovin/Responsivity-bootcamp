@@ -67,8 +67,39 @@ body{
     grid-column: 1/-1;
     height: 5rem;
     background-color: #C1C99A;
+    align-self: self-end;
 }
 
 @media screen  and (max-width:700px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 3fr 1fr;
+    }
 
+    .header{
+        justify-self: center;
+    }
+    
+    .nav{
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+        margin: 0;
+    }
+    .nav-section {
+        height: auto;
+    }
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr 1fr;
+        gap: 0.7rem;
+        margin: 0;
+    }
+    .main-section {
+        grid-template-columns: 1fr;
+    }
+    .side-section {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin: 0;
+    }
 }
